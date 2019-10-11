@@ -8,30 +8,35 @@
   <title>Tip Calculator</title>
 </head>
 <body>
-  <h1>Tip Calculator</h1>
+  
 
   <div id="calculator">
-    <form>
-      <label for="bill">How much was the you bill?</label>
-      <input id="bill" type="text" placeholder="Bill Amount" name="bill">
+    <div id="calculator-container">
+      <h1>Tip Calculator</h1>
+      <form>
+        <label for="bill">How much was the you bill?</label>
+        <input id="bill" type="text" placeholder="Bill Amount" name="bill">
 
-      <label for="service">How was your service?</label>
-      <select id="serviceOpt">
-        <option disabled selected aria-disabled="true" value="">-- Choose an Option--</option>
-        <option value="0.3">30&#37; - Outstanding</option>
-        <option value="0.2">20&#37; - Good</option>
-        <option value=".15">15&#37; - It was Ok</option>
-        <option value=".1">10&#37; - Bad</option>
-      </select>
-    </form>
+        <label for="service">How was your service?</label>
+        <select id="serviceOpt">
+          <option disabled selected aria-disabled="true" value="">-- Choose an Option--</option>
+          <option value="0.3">30&#37; - Outstanding</option>
+          <option value="0.2">20&#37; - Good</option>
+          <option value=".15">15&#37; - It was Ok</option>
+          <option value=".1">10&#37; - Bad</option>
+        </select>
+      </form>
 
-    <button type="button" id="calculate">Calculate</button>
+      <button type="button" id="calculate">Calculate</button>
+
+      <div>
+          <span id="tip">0.00</span>
+          <small id="each">each</small>
+      </div>
+    </div>
   </div>
 
-  <div>
-    $<span id="tip">0.00</span>
-    <small id="each">each</small>
-  </div>
+  
 
   <script src="index.js"></script>
 </body>
