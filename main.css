@@ -1,3 +1,35 @@
+body {
+  background: maroon;
+}
+
 #each, #tip {
   display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  width: 35%;
+  margin-bottom: 20px;
+}
+
+#calculator {
+  width: 600px;
+  margin: 0 auto;
+  border: 2px black solid;
+  background: #fff;
+}
+
+#calculator-container {
+  margin: 0 auto;
+  width: 505px;
+
+}
+
+#calculator h1 {
+  width: 225px;
+  margin: 0 auto;
 }
