@@ -12,8 +12,8 @@ calcBtn.addEventListener('click', (e) => {
 
   tipPlaceholder.style.display = 'block'
 
-  tipPlaceholder.innerText = total
-  console.log(billAmt * serviceOpt);
-  console.log(serviceOpt);
+  tipPlaceholder.innerText = `$ ${total}`
+  console.log(billAmt * serviceOpt)
+  console.log(serviceOpt)
   
 })
